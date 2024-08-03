@@ -46,10 +46,11 @@ export default function Board(){
       if(winCheck()){
         return newSquares;
       }
-      setSymbol((symbol==='X')?'O':'X');
       if(squares[index]){
         return newSquares;
       }
+      setSymbol((symbol==='X')?'O':'X');
+
       newSquares[index]=symbol;
       return newSquares;
       })}
